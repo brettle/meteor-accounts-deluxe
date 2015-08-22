@@ -2,11 +2,11 @@
 
 Package.describe({
   name: 'brettle:accounts-deluxe',
-  version: '0.0.1',
+  version: '0.0.2',
   summary:
     'Give all visitors anonymous accounts to which a login service can be ' +
     'added with popular UI packages',
-  git: 'https://github.com/brettle/meteor-workaround-issue-4331',
+  git: 'https://github.com/brettle/meteor-accounts-deluxe.git',
   documentation: 'README.md'
 });
 

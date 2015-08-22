@@ -1,6 +1,6 @@
 # brettle:accounts-deluxe
 
-Give all visitors anonymous accounts to which another login service can be added
+Give all visitors anonymous accounts to which they can add a login service
 with popular accounts UI packages like
 [`accounts-ui`](https://atmospherejs.com/meteor/accounts-ui) and
 [`useraccounts:bootstrap`](https://atmospherejs.com/useraccounts/bootstrap).
@@ -13,14 +13,14 @@ For a demo, visit
 ## Details
 
 This package just includes the other `brettle:accounts-*` packages so you don't
-need to add each one separately. If you want finer control over which features are
-added, then add just the packages that provide the features you want. Here is
-brief description of each of the packages and the features they provide. Follow
-the links for more information.
+need to add each one separately. If you want finer control, then add just the
+packages that provide the features you want. Here is brief description of each
+of the packages and the features they provide. Follow the links for more
+information.
 
 [`brettle:accounts-anonymous-auto`](https://atmospherejs.com/brettle/accounts-anonymous-auto) -
-Automatically creates anonymous accounts for each new visitor to ensure that
-there is always an account associated with the current user.
+Automatically creates anonymous accounts for new visitors to ensure that
+an account is always associated with the current user.
 
 [`brettle:accounts-anonymous-ui`](https://atmospherejs.com/brettle/accounts-anonymous-ui) -
 Monkey patches accounts UI packages to treat anonymous users like logged out
