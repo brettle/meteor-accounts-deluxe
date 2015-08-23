@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'brettle:accounts-deluxe',
-  version: '0.0.3',
+  version: '0.0.4',
   summary:
     'Give all visitors anonymous accounts to which a login service can be ' +
     'added with popular UI packages',
