@@ -130,8 +130,8 @@ of the `brettle:accounts-*` suite just like the accounts created by
 `brettle:accounts-anonymous`.
 
 ### How is `brettle:accounts-add-service` different from
-[`splendido:accounts-meld`](https://atmospherejs.com/splendido/accounts-meld),
-[`mondora:connect-with`](https://atmospherejs.com/mondora/connect-with), and [`bozhao:link-accounts`](https://atmospherejs.com/bozhao/link-accounts)?
+ [`splendido:accounts-meld`](https://atmospherejs.com/splendido/accounts-meld),
+ [`mondora:connect-with`](https://atmospherejs.com/mondora/connect-with), and [`bozhao:link-accounts`](https://atmospherejs.com/bozhao/link-accounts)?
 
 The
 [`splendido:accounts-meld`](https://atmospherejs.com/splendido/accounts-meld)
@@ -165,7 +165,7 @@ OAuth services. Support for individual OAuth services is hard-coded into the
 package.
 
 ### Why monkey patch the
-### [`useraccounts`](https://atmospherejs.com/useraccounts/core) suite?
+ [`useraccounts`](https://atmospherejs.com/useraccounts/core) suite?
 
 I would prefer if the `useraccounts` suite treated anonymous users as signed out
 users, so I submitted [a feature
