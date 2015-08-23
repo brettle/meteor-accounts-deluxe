@@ -81,7 +81,7 @@ packages I mention and feel that my comments mis-characterize you or your
 package, please let me know via PR, issue, or personal email, and I'll do my
 best to fix it. Thanks!
 
-### How are `brettle:accounts-anonymous`, `brettle:accounts-anonymous-auto`, and `brettle:accounts-anonymous-ui` different from [artwells:accounts-guest](https://atmospherejs.com/artwells/accounts-guest)?
+ <h3>How are `brettle:accounts-anonymous`, `brettle:accounts-anonymous-auto`, and `brettle:accounts-anonymous-ui` different from [artwells:accounts-guest](https://atmospherejs.com/artwells/accounts-guest)?</h3>
 
 The `artwells:accounts-guest` package provides guest accounts, supports using
 `accounts-ui`, and optionally provides automatic sign-in and deletion of old
@@ -129,9 +129,9 @@ create truly anonymous guest accounts, those accounts should work with the rest
 of the `brettle:accounts-*` suite just like the accounts created by
 `brettle:accounts-anonymous`.
 
-### How is `brettle:accounts-add-service` different from
+ <h3>How is `brettle:accounts-add-service` different from
  [`splendido:accounts-meld`](https://atmospherejs.com/splendido/accounts-meld),
- [`mondora:connect-with`](https://atmospherejs.com/mondora/connect-with), and [`bozhao:link-accounts`](https://atmospherejs.com/bozhao/link-accounts)?
+ [`mondora:connect-with`](https://atmospherejs.com/mondora/connect-with), and [`bozhao:link-accounts`](https://atmospherejs.com/bozhao/link-accounts)?</h3>
 
 The
 [`splendido:accounts-meld`](https://atmospherejs.com/splendido/accounts-meld)
@@ -164,8 +164,8 @@ the same drawbacks as `mondora:connect-with` but it does not support arbitrary
 OAuth services. Support for individual OAuth services is hard-coded into the
 package.
 
-### Why monkey patch the
- [`useraccounts`](https://atmospherejs.com/useraccounts/core) suite?
+ <h3>Why monkey patch the
+ [`useraccounts`](https://atmospherejs.com/useraccounts/core) suite?</h3>
 
 I would prefer if the `useraccounts` suite treated anonymous users as signed out
 users, so I submitted [a feature
