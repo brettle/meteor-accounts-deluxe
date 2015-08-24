@@ -5,6 +5,12 @@ with popular accounts UI packages like
 [`accounts-ui`](https://atmospherejs.com/meteor/accounts-ui) and
 [`useraccounts:bootstrap`](https://atmospherejs.com/useraccounts/bootstrap).
 
+This package just includes the other `brettle:accounts-*` packages so you don't
+need to add each one separately.  See [the Details
+section](https://github.com/brettle/meteor-accounts-deluxe/blob/master/README.md#details)
+for a brief description of the individual packages.
+
+
 ## Demo
 
 For a demo, visit
