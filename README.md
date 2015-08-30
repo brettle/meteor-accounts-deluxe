@@ -53,9 +53,15 @@ information.
 Automatically creates anonymous accounts for new visitors to ensure that
 an account is always associated with the current user.
 
-[`brettle:accounts-anonymous-ui`](https://atmospherejs.com/brettle/accounts-anonymous-ui) -
-Monkey patches accounts UI packages to treat anonymous users like logged out
-users so that they can sign up and sign in.
+[`brettle:accounts-patch-ui`](https://atmospherejs.com/brettle/accounts-patch-ui) -
+Monkey patches accounts UI packages to treat users who have logged in but not
+signed up (e.g. anonymous users) like logged out users so that they can sign up
+and sign in.
+
+[`brettle:accounts-login-state`](https://atmospherejs.com/brettle/accounts-login-state) -
+Tracks the current user's login state and allows applications and packages to
+register callbacks that help determine whether a user has signed up. The
+`brettle:accounts-patch-ui` package uses this package.
 
 [`brettle:accounts-add-service`](https://atmospherejs.com/brettle/accounts-add-service) -
 Allows users (anonymous or otherwise) to add login services to their accounts.
@@ -87,7 +93,7 @@ packages I mention and feel that my comments mis-characterize you or your
 package, please let me know via PR, issue, or personal email, and I'll do my
 best to fix it. Thanks!
 
- <h3>How are `brettle:accounts-anonymous`, `brettle:accounts-anonymous-auto`, and `brettle:accounts-anonymous-ui` different from [artwells:accounts-guest](https://atmospherejs.com/artwells/accounts-guest)?</h3>
+ <h3>How are `brettle:accounts-anonymous`, `brettle:accounts-anonymous-auto`, and `brettle:accounts-patch-ui` different from [artwells:accounts-guest](https://atmospherejs.com/artwells/accounts-guest)?</h3>
 
 The `artwells:accounts-guest` package provides guest accounts, supports using
 `accounts-ui`, and optionally provides automatic sign-in and deletion of old
@@ -105,13 +111,13 @@ support truly anonymous users like those provided by
 `brettle:accounts-anonymous` (i.e. without requiring `accounts-password`).
 
 The `artwells:accounts-guest` package supports using `accounts-ui`, while
-`brettle:accounts-anonymous-ui` supports using either `accounts-ui` or the
+`brettle:accounts-patch-ui` supports using either `accounts-ui` or the
 `useraccounts:*` suite. Also, `artwells:accounts-guest` supports `accounts-ui`
 by overriding the `{{currentUser}}` helper globally so that it returns null when
 the user is a guest. This causes the `loginButtons` template to display the
 "Sign In" link to guest users, but it also means that any other templates that
 use the `{{currentUser}}` helper will not be able access guest users. The
-`brettle:accounts-anonymous-ui` package takes a different approach. It overrides
+`brettle:accounts-patch-ui` package takes a different approach. It overrides
 the `{{currentUser}}` helper solely in the `loginButtons` template. Changing
 `artwells:accounts-guest` to do the same thing might cause
 backward-compatibility issues for any applications that rely on the current
@@ -129,7 +135,7 @@ app-specific enough that it doesn't warrant inclusion in a package.
 The `brettle:accounts-*` suite started as a friendly fork of
 `artwells:accounts-guest` driven by a desire to forgo backward compatibility
 concerns and a desire to split the package into `brettle:accounts-anonymous`,
-`brettle:accounts-anonymous-auto`, and `brettle:accounts-anonymous-ui`. That
+`brettle:accounts-anonymous-auto`, and `brettle:accounts-patch-ui`. That
 said, if you use a future release of `artwells:accounts-guest` configured to
 create truly anonymous guest accounts, those accounts should work with the rest
 of the `brettle:accounts-*` suite just like the accounts created by

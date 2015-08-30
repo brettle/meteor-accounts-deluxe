@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'brettle:accounts-deluxe',
-  version: '0.0.4',
+  version: '0.1.0',
   summary:
     'Give all visitors anonymous accounts to which a login service can be ' +
     'added with popular UI packages',
@@ -15,12 +15,12 @@ Package.onUse(function(api) {
   api.use('brettle:accounts-add-service@0.3.0');
   api.use('brettle:accounts-logout-to-switch@0.3.0');
   api.use('brettle:accounts-anonymous-auto@0.3.2');
-  api.use('brettle:accounts-anonymous-ui@0.3.1');
+  api.use('brettle:accounts-patch-ui@0.0.1');
   api.imply('accounts-base');
   api.imply('brettle:accounts-add-service');
   api.imply('brettle:accounts-logout-to-switch');
   api.imply('brettle:accounts-anonymous-auto');
-  api.imply('brettle:accounts-anonymous-ui');
+  api.imply('brettle:accounts-patch-ui');
 });
 
 Package.onTest(function(api) {
@@ -29,7 +29,7 @@ Package.onTest(function(api) {
   api.use('brettle:accounts-add-service@0.3.0');
   api.use('brettle:accounts-logout-to-switch@0.3.0');
   api.use('brettle:accounts-anonymous-auto@0.3.2');
-  api.use('brettle:accounts-anonymous-ui@0.3.1');
+  api.use('brettle:accounts-patch-ui@0.0.1');
   // No tests for this particular meta-package. But all of the packages it uses
   // have their own tests.
 });
