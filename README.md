@@ -58,22 +58,23 @@ Monkey patches accounts UI packages to treat users who have logged in but not
 signed up (e.g. anonymous users) like logged out users so that they can sign up
 and sign in.
 
-[`brettle:accounts-login-state`](https://atmospherejs.com/brettle/accounts-login-state) -
-Tracks the current user's login state and allows applications and packages to
-register callbacks that help determine whether a user has signed up. The
-`brettle:accounts-patch-ui` package uses this package.
-
 [`brettle:accounts-add-service`](https://atmospherejs.com/brettle/accounts-add-service) -
 Allows users (anonymous or otherwise) to add login services to their accounts.
 
 [`brettle:accounts-logout-to-switch`](https://atmospherejs.com/brettle/accounts-logout-to-switch) -
-Requires that non-anonymous users logout before they login to another existing
+Requires that signed up users logout before they login to another existing
 account.
 
 [`brettle:accounts-anonymous`](https://atmospherejs.com/brettle/accounts-anonymous) -
 Provides a way to create anonymous accounts but does not automatically create
 the for new visitors. The `brettle:accounts-anonymous-auto` package uses this
 package.
+
+[`brettle:accounts-login-state`](https://atmospherejs.com/brettle/accounts-login-state) -
+Tracks the current user's login state and allows applications and packages to
+register callbacks that help determine whether a user has signed up. The
+`brettle:accounts-patch-ui` and `brettle:accounts-logout-to-switch` packages
+uses this package.
 
 [`brettle:accounts-multiple`](https://atmospherejs.com/brettle/accounts-multiple) -
 Provides hooks for handling the case where a logged in user attempts to login
