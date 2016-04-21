@@ -13,8 +13,7 @@ for a brief description of the individual packages.
 
 ## Demo
 
-For a demo, visit
-[brettle-accounts-demo.meteor.com](http://brettle-accounts-demo.meteor.com).
+For a demo, install and run [the demo app](https://github.com/brettle/meteor-accounts-deluxe-demo).
 
 ## Installation
 
