@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'brettle:accounts-deluxe',
-  version: '0.2.2',
+  version: '0.2.3',
   summary:
     'Give all visitors anonymous accounts to which a login service can be ' +
     'added with popular UI packages',
@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.0.4');
+  api.versionsFrom(['1.0.4', '2.3']);
   api.use('brettle:accounts-add-service@1.0.0');
   api.use('brettle:accounts-logout-to-switch@0.4.0');
   api.use('brettle:accounts-anonymous-auto@0.3.2');
